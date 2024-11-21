@@ -1,0 +1,131 @@
+.about-container {
+   background: linear-gradient(to left, #000000, #23cfee, #080808);
+   display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  
+  .about-text {
+    flex: 1;
+    margin-bottom: 2.5rem;
+    animation: slideLeft 0.5s ease-out;
+    justify-items: center;
+  }
+  
+  .about-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .about-description {
+    font-size: medium;
+    font-weight: 300;
+  }
+  
+  
+  .about-image-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;  
+    margin-bottom: 20%;
+    margin-left: 50px;
+    
+    
+  }
+
+
+
+
+  .about-skill1{
+    color:white ;
+  background: linear-gradient(to left, #000000, #23cfee, #080808);
+    margin-top: 10px;
+  }
+
+  .about-skill2{
+    color:white;
+  background: linear-gradient(to left, #000000, #23cfee, #080808);
+    margin-top: 10px;
+  }
+
+  .about-skill3{
+    color: white;
+  background: linear-gradient(to left, #000000, #23cfee, #080808);
+    margin-top: 10px;
+  }
+
+  .about-skill4{
+    color: white;
+  background: linear-gradient(to left, #000000, #23cfee, #080808);
+    margin-top: 10px;
+  }
+  
+  
+  .about-image {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 50%; 
+  }
+  
+  .about-image:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 1.5rem;
+    }
+  
+    .about-title {
+      font-size: 1.5rem;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+    }
+  
+    .about-image-container {
+      width: 90%;
+      justify-content: center;
+      margin-bottom: 9.5rem;
+      /* margin-right: 50px; */
+    }
+  
+    .about-image {
+      width: 100%;
+      max-width: 300px;
+      
+    }
+  
+    
+    .about-social-links {
+      flex-direction: row; 
+      gap: 1rem;
+    }
+  
+    .social-icon {
+      font-size: 1.25rem;
+    }
+  }
+  
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
